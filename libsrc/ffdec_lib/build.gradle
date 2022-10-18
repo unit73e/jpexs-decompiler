@@ -1,0 +1,19 @@
+plugins {
+    id 'jpexs.decompiler.java-library-conventions'
+}
+
+dependencies {
+    implementation files('../../lib/LZMA.jar')
+    implementation files('../../lib/flashdebugger.jar')
+    implementation files('../../lib/sfntly.jar')
+    implementation files('../../lib/ttf.jar')
+    implementation files('../../lib/graphs.jar')
+    implementation files('../../lib/jpacker.jar')
+    implementation files('../../lib/gnujpdf.jar')
+    implementation files('../../lib/gif.jar')
+    implementation files('../../lib/avi.jar')
+    implementation files('../../lib/jl1.0.1.jar')
+    implementation files('../../lib/nellymoser.jar')
+    implementation files('../../lib/ddsreader.jar')
+    implementation files('../../lib/cmykjpeg.jar')
+}
