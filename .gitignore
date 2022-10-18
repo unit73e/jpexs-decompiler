@@ -81,3 +81,9 @@ exported1.all.bin
 /libsrc/flamingo/nbproject/private/
 /libsrc/flamingo/build/
 /libsrc/flamingo/dist/
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build

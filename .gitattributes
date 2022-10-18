@@ -53,3 +53,6 @@
 # Fonts
 *.otf binary
 *.ttf binary
+
+# Gradle
+/gradlew        text eol=lf
