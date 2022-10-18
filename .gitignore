@@ -87,3 +87,6 @@ exported1.all.bin
 
 # Ignore Gradle build output directory
 build
+
+# IntelliJ
+/.idea
