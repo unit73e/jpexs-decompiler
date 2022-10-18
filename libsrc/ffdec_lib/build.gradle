@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    implementation files('../../lib/LZMA.jar')
+    implementation project(':libsrc:LZMA')
     implementation files('../../lib/flashdebugger.jar')
     implementation files('../../lib/sfntly.jar')
     implementation files('../../lib/ttf.jar')

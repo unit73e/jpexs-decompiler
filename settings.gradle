@@ -2,3 +2,6 @@ rootProject.name = 'jpexs-decompiler'
 include 'app'
 include 'libsrc:ffdec_lib'
 include 'libsrc:jpproxy'
+
+// https://www.7-zip.org/sdk.html
+include 'libsrc:LZMA'
