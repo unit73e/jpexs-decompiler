@@ -16,6 +16,7 @@ dependencies {
     implementation files('../lib/minimal-json-0.9.5.jar')
     implementation files('../lib/substance-flamingo-6.2.jar')
     implementation files('../lib/gnujpdf.jar')
+    implementation files('../lib/trident-6.2.jar')
 }
 
 application {
