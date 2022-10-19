@@ -3,5 +3,11 @@ include 'app'
 include 'libsrc:ffdec_lib'
 include 'libsrc:jpproxy'
 
-// https://www.7-zip.org/sdk.html
+/*
+ * Not found in Maven Central
+ */
+
+// Code from 7-Zip: https://www.7-zip.org/sdk.html
 include 'libsrc:LZMA'
+// Copy from FFMPEG in Java. No hosted source code found.
+include 'libsrc:nellymoser'

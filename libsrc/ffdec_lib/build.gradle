@@ -13,7 +13,7 @@ dependencies {
     implementation files('../../lib/gif.jar')
     implementation files('../../lib/avi.jar')
     implementation files('../../lib/jl1.0.1.jar')
-    implementation files('../../lib/nellymoser.jar')
+    implementation project(':libsrc:nellymoser')
     implementation files('../../lib/ddsreader.jar')
     implementation files('../../lib/cmykjpeg.jar')
 }
