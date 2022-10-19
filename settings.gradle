@@ -11,3 +11,11 @@ include 'libsrc:jpproxy'
 include 'libsrc:LZMA'
 // Copy from FFMPEG in Java. No hosted source code found.
 include 'libsrc:nellymoser'
+
+/*
+ * Issues compiling
+ */
+// Code from Monte Media Library: https://www.randelshofer.ch/monte/
+// Does not compile with JDK9 or above
+// include 'libsrc:avi'
+// include 'libsrc:cmykjpeg'
