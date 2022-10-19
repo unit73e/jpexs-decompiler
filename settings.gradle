@@ -14,6 +14,8 @@ include 'libsrc:jpacker'
 include 'libsrc:LZMA'
 // Copy from FFMPEG in Java. No hosted source code found.
 include 'libsrc:nellymoser'
+// Code from Hameister: https://www.hameister.org/JavaSwingTreeTable.html
+include 'libsrc:treetable'
 
 /*
  * Issues compiling

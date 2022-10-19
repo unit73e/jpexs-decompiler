@@ -10,7 +10,7 @@ dependencies {
     implementation files('../lib/substance-6.2.jar')
     implementation files('../lib/flashdebugger.jar')
     implementation files('../lib/JavactiveX.jar')
-    implementation files('../lib/treetable.jar')
+    implementation project(':libsrc:treetable')
     implementation files('../lib/tablelayout.jar')
     implementation files('../lib/flamingo-6.2.jar')
     implementation files('../lib/minimal-json-0.9.5.jar')

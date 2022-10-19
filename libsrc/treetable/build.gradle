@@ -1,0 +1,11 @@
+plugins {
+    id 'jpexs.decompiler.java-library-conventions'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
