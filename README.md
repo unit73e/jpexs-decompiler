@@ -1,72 +1,41 @@
-# JPEXS Free Flash Decompiler
+# JPEXS Free Flash Decompiler - Using Gradle
 
-Open Source Flash SWF decompiler and editor. Extract resources, convert SWF to FLA, edit ActionScript, replace images, sounds, texts and fonts. Various output formats available. Works with Java on Windows, Linux and macOS.
+This is a modified version of the original JPEXS Free Flash Decompiler that uses Gradle instead of Ant. The original
+repository is [here](https://github.com/jindrapetrik/jpexs-decompiler/).
 
-## Application description and features
-For information about using the software, list of features, etc., visit [FFDec Wiki](https://github.com/jindrapetrik/jpexs-decompiler/wiki).
-
-## Free-Decompiler.com website
-In the past (before 2018), we were using *free-decompiler.com* domain as homepage and GitHub for the source code, We've now moved all information to GitHub.
-
-## Download application
-For downloading the app, see [latest release](https://github.com/jindrapetrik/jpexs-decompiler/releases/latest).
-Older versions and nightly builds are availabe at the [releases section](https://github.com/jindrapetrik/jpexs-decompiler/releases)
-
-### How to install
-See [installation section of the wiki](https://github.com/jindrapetrik/jpexs-decompiler/wiki/Installation)
+Most of the README was removed on this version to avoid confusion with the original JPEX.
 
 ## Source code
+
 ### How to get the source
- You can make a local copy of the sources with the following command:
+
+You can make a local copy of the sources with the following command:
+
 ```
-git clone https://github.com/jindrapetrik/jpexs-decompiler.git
+git clone https://github.com/unit73e/jpexs-decompiler.git
 ```
+
 This assumes you have git installed on your system.
 
-### Branches 
-Git source control manager supports multiple code branches. We use two main branches.
+### Gradle
 
-* `master` - for released "stable" versions
-* `dev` - for newest changes from developers - "nightly" version is released from this branch
-
-You can switch to `dev` branch with following git command:
-```
-git checkout dev
-```
-
-### GIT recommended
-It is recommended to have [GIT] commandline executables installed. Building script uses GIT to include revision number in to the binary. (For Windows, you must enable Git in windows command line during installation.)
-
-### Netbeans project
-
-Source code contains Netbeans Project so you can open it in [Netbeans IDE]. Then you can use standard actions like Run, Build, Debug, Clean and Build in the IDE. Other specific tasks can be executed via menu on build.xml (see Ant part)
-
-### Ant
-If you do not have Netbeans, you can build source code also with Apache Ant.
-After installing Ant it is good to put it into your PATH variable.
-Open up commandline and navigate to sources directory.
 To run application, execute task "run" by entering this command:
-```
-ant run
-```
-To only build, execute build task:
-```
-ant build
-```
-For creating EXE, Installer and ZIP version, there exist Ant tasks "exe","installer","release". These tasks require additional software installed:
-* [launch4j] (3.5 or newer) - creates windows executable
-* [NSIS] (Nullsoft Scriptable Install System) (3.0b3 or newer) - creates installer
 
-You must configure installation path of these tools in tools.properties file, which could look like this for windows:
 ```
-nsis.path = c:\\program files (x86)\\NSIS
-launch4j.path = c:\\program files (x86)\\launch4j
+gradle run
 ```
+
+To only build, execute build task:
+
+```
+gradle build
+```
+
 ### Building libraries
 
 There are few libraries which need to be built too. These libraries are placed in "libsrc" directory.
+
 * **FFDec_lib** - core of decompilation, SWF parsing, exporting
-**This library is built automatically with main project, but can be build also separately with its own Ant script.**
 * **jpacker** - used for compression of JavaScript Canvas scripts (Netbeans/Ant project)
 * **jpproxy** - proxy part of FFDec (Netbeans/Ant project)
 * **jsyntaxpane** - code editor (Netbeans/Apache Maven project)
@@ -76,42 +45,30 @@ There are few libraries which need to be built too. These libraries are placed i
 * **ttf** - used for TTF font export (Netbeans/Ant project)
 * **gnujpdf** - used for PDF export (Netbeans/Ant project)
 
+Some of the libraries are currently being referenced by the built jar due to technical difficulties.
+
 ## Change log
+
 All notable changes are listed in the file [CHANGELOG.md](CHANGELOG.md)
-
-## Deployment
-
-### Nightly builds
-When a commit is pushed/merged into `dev` branch, a new prerelease version is created automatically by the Travis CI.
-These prerelease versions are called nightly builds. On releasing a new nightly build, the previous nightly build is removed.
-
-### Stable versions
-A new stable version is created automatically by the Travis CI when marking a revision in `master` branch with a tag in format `versionx.y.z`.
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
 Versions are in format `x.y.z`, for example `9.1.2`.
-For the versions available, see the [tags on this repository](https://github.com/jindrapetrik/jpexs-decompiler/tags).
-
-Nightly builds have additional suffix `_nightlyN` where `N` is number which increments with every (automatic) nightly releleas
-and does not depend on the `x.y.z` numbers. (This means nightly number is *NOT* reseted to 0 when releasing stable)
-Older nightly builds are *NOT* available through git tags.
 
 ## Authors
+
 The decompiler was originally written by **Jindra Petřík** also known as **JPEXS**.
 The application was made in Czech Republic.
 
 ### Developers
+
 * **JPEXS** - leader, development of the decompiler, website main admin, github account admin, organization
 * **honfika** - development of the decompiler
 * **Paolo Cancedda** - former developer
 * ...other pushers on GitHub or Google Code
 
 ### Translators
+
 * **Jaume Badiella Aguilera** - catalan translation
 * **Capasha** - swedish translation
 * **王晨旭** (Chenxu Wang) - chinese translation
@@ -129,17 +86,8 @@ The application was made in Czech Republic.
 * **Rtsjx** - chinese translation
 * **koiru** - japanese translation
 
-## Contact
-You can use our Issue tracker to report bugs, but our support is VERY limited.
-[https://www.free-decompiler.com/flash/issues](https://www.free-decompiler.com/flash/issues)
-
-See [Frequently Asked Questions (FAQ) in wiki](https://github.com/jindrapetrik/jpexs-decompiler/wiki/FAQ) before you try to contact me.
-
-### Email contact
-Emergency contact to JPEXS developer is `jindra.petrik@gmail.com`.
-But we prefer Issue tracker contact.
-
 ## Licenses + Acknowledgments
+
 ### Application
 
 FFDec Application is licensed under the GNU GPL v3 (GPL-3.0-or-later) licence, see the [license.txt](license.txt).
@@ -157,6 +105,7 @@ And links also these libraries:
 * FFDec Library (LGPLv3) - see below
 
 Application uses also some icons of the [Silk icons pack], [Silk companion 1] and [FatCow icons pack].
+
 ### Library
 
 FFDec Library is licensed under GNU LGPL v3 (LGPL-3.0-or-later), see [license.txt](libsrc/ffdec_lib/license.txt) for details.
