@@ -7,6 +7,8 @@ include 'libsrc:jpproxy'
  * Not found in Maven Central
  */
 
+// Code from JPacker: https://code.google.com/archive/p/jpacker/
+include 'libsrc:jpacker'
 // Code from 7-Zip: https://www.7-zip.org/sdk.html
 include 'libsrc:LZMA'
 // Copy from FFMPEG in Java. No hosted source code found.

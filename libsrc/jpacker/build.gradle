@@ -1,0 +1,15 @@
+plugins {
+    id 'jpexs.decompiler.java-library-conventions'
+}
+
+dependencies {
+    implementation files('jargs.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}

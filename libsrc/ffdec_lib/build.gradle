@@ -8,7 +8,7 @@ dependencies {
     implementation files('../../lib/sfntly.jar')
     implementation files('../../lib/ttf.jar')
     implementation files('../../lib/graphs.jar')
-    implementation files('../../lib/jpacker.jar')
+    implementation project(':libsrc:jpacker')
     implementation files('../../lib/gnujpdf.jar')
     implementation files('../../lib/gif.jar')
     implementation files('../../lib/avi.jar')
