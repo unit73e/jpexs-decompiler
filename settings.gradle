@@ -3,6 +3,7 @@ include 'app'
 include 'libsrc:ffdec_lib'
 include 'libsrc:jpproxy'
 include 'libsrc:plugins'
+include 'libsrc:uploader'
 
 /*
  * Not found in Maven Central
