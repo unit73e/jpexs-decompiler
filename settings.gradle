@@ -2,6 +2,7 @@ rootProject.name = 'jpexs-decompiler'
 include 'app'
 include 'libsrc:ffdec_lib'
 include 'libsrc:jpproxy'
+include 'libsrc:plugins'
 
 /*
  * Not found in Maven Central
