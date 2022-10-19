@@ -22,13 +22,13 @@ This assumes you have git installed on your system.
 To run application, execute task "run" by entering this command:
 
 ```
-gradle run
+./gradlew run
 ```
 
 To only build, execute build task:
 
 ```
-gradle build
+./gradlew build
 ```
 
 ### Building libraries
