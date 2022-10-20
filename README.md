@@ -3,7 +3,10 @@
 This is a modified version of the original JPEXS Free Flash Decompiler that uses Gradle instead of Ant. The original
 repository is [here](https://github.com/jindrapetrik/jpexs-decompiler/).
 
-Most of the README was removed on this version to avoid confusion with the original JPEX.
+Other important differences:
+
+- Most of the README was removed on this version to avoid confusion with the original JPEX.
+- Netbeans configurations have been removed because Gradle is IDE agnostic.
 
 ## Source code
 
