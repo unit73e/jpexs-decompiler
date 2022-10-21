@@ -5,8 +5,11 @@ repository is [here](https://github.com/jindrapetrik/jpexs-decompiler/).
 
 Other important differences:
 
+- Any Ant files were removed.
 - Most of the README was removed on this version to avoid confusion with the original JPEX.
 - Netbeans configurations have been removed because Gradle is IDE agnostic.
+- Installer and run scripts were removed. Gradle has its own solutions.
+- Travis was removed to avoid confusion with the original project.
 
 ## Source code
 
