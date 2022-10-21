@@ -1,4 +1,4 @@
-rootProject.name = 'jpexs-decompiler'
+rootProject.name = 'FFDec'
 include 'app'
 include 'libsrc:ffdec_lib'
 include 'libsrc:jpproxy'
@@ -25,3 +25,4 @@ include 'libsrc:treetable'
 // Does not compile with JDK9 or above
 // include 'libsrc:avi'
 // include 'libsrc:cmykjpeg'
+
